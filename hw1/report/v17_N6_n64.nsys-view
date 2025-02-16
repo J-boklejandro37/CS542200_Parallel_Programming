@@ -1,0 +1,9 @@
+{
+    "extension": "nsys-view",
+    "files": [
+        "nsys_reports_v17_N6_n64/rank_0.nsys-rep"
+    ],
+    "product-version": "2024.6.1.90-246134905481v0",
+    "uuid": "{6fb8730c-1425-4bb1-8078-7a724cc013e7}",
+    "version": "1.0"
+}

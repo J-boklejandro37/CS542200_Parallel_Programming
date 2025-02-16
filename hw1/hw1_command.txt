@@ -1,0 +1,39 @@
+[For compiling]
+$ mpicxx -O3 -lm hw1.cc -o hw1
+
+[For viewing the spec of program]
+$ cat /home/pp24/share/hw1/testcases/01.txt
+
+[For running the program]
+$ srun -Nnodes -nNPROC ./hw1 n /home/pp24/share/hw1/testcases/01.in 01.out
+
+[For testing out the correctness of output]
+$ hw1-floats /home/pp24/share/hw1/testcases/01.out 01.out
+
+[Use cmp to compare]
+$ cmp /home/pp24/share/hw1/testcases/01.out 01.out
+
+
+[open in a row is faster]
+MPI_File_open(input_file);
+odd_even_sort();
+MPI_File_open(output_file);
+=> 103.96s
+
+MPI_File_open(input_file);
+MPI_File_open(output_file);
+odd_even_sort();
+=> 100.05s (-4s)
+
+[open in a row is faster]
+using omp single on float_sort is faster
+=> 100.64 -> 100.05 (-0.6s)
+
+[using omp thread on float_sort]
+102.82 -> 100.32 (-2s)
+
+[using Isend/Irecv instead of Sendrecv]
+probability case
+
+[using openmpi instead of intelmpi]
+96.71s -> 90.23s (-6.5s)

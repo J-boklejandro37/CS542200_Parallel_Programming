@@ -1,0 +1,20 @@
+{
+    "extension": "nsys-view",
+    "files": [
+        "nsys_reports_v3/rank_0.nsys-rep",
+        "nsys_reports_v3/rank_1.nsys-rep",
+        "nsys_reports_v3/rank_2.nsys-rep",
+        "nsys_reports_v3/rank_3.nsys-rep",
+        "nsys_reports_v3/rank_4.nsys-rep",
+        "nsys_reports_v3/rank_5.nsys-rep",
+        "nsys_reports_v3/rank_6.nsys-rep",
+        "nsys_reports_v3/rank_7.nsys-rep",
+        "nsys_reports_v3/rank_8.nsys-rep",
+        "nsys_reports_v3/rank_9.nsys-rep",
+        "nsys_reports_v3/rank_10.nsys-rep",
+        "nsys_reports_v3/rank_11.nsys-rep"
+    ],
+    "product-version": "2024.6.1.90-246134905481v0",
+    "uuid": "{fc5d22b6-1d39-4780-91e4-84a7ee1e1af9}",
+    "version": "1.0"
+}
